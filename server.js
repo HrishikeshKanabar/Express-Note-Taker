@@ -9,8 +9,8 @@ const PORT = process.env.PORT || 3001;
 app.use(exp.urlencoded({ extended: true }));
 app.use(exp.json());
 
-app.get('/api', (req, res) => {
-    res.send("Hello")
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname + "/./public/index.html"));
   });
 
 app.listen(PORT, () => {
