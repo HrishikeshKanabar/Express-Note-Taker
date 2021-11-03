@@ -10,7 +10,7 @@ app.use(exp.urlencoded({ extended: true }));
 app.use(exp.json());
 
 app.get('/api', (req, res) => {
-    res.sendFile(path.join(__dirname + "/../public/index.html"));
+    res.send("Hello")
   });
 
 app.listen(PORT, () => {
