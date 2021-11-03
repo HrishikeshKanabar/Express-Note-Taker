@@ -9,7 +9,7 @@ const PORT = 3001;
 app.use(exp.urlencoded({ extended: true }));
 app.use(exp.json());
 
-app.get('/api/animals', (req, res) => {
+app.get('/', (req, res) => {
     res.send('Hello!');
   });
 
