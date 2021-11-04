@@ -1,6 +1,7 @@
 // Express JS dependency
 const exp = require("express");
 const path = require("path");
+const dbData = require("./db/db.json");
 
 // Start
 const app = exp();
@@ -9,15 +10,27 @@ const PORT = process.env.PORT || 3001;
 // Sets up the Express app to handle data parsing
 app.use(exp.urlencoded({ extended: true }));
 app.use(exp.json());
+app.use(exp.static(__dirname + '/public'));
 
-// route request for landing page
+// Routes
 
+// Route get to display all notes in Json
+app.get("/api/notes", (req, res) => {
+    res.json(dbData);
+});
+
+// Route post to save notes
+
+
+
+
+// Route get to request for landing page
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname + "/public/index.html"));
   });
 
 
-// route request for notes pages
+// Route get to  request for notes pages
 app.get("/notes", (req, res) => {
   res.sendFile(path.join(__dirname + "/public/notes.html"));
 });
@@ -27,3 +40,4 @@ app.get("/notes", (req, res) => {
 app.listen(PORT, () => {
     console.log('API server Started on port 3001 !');
 });
+
