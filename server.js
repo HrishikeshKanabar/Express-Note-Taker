@@ -12,16 +12,7 @@ app.use(exp.urlencoded({ extended: true }));
 app.use(exp.json());
 app.use(exp.static(__dirname + '/public'));
 
-// Routes
-
-// Route get to display all notes in Json
-app.get("/api/notes", (req, res) => {
-    res.json(dbData);
-});
-
-// Route post to save notes
-
-
+//  #####  Routes for HTML file  ########
 
 
 // Route get to request for landing page
@@ -34,6 +25,32 @@ app.get('/', (req, res) => {
 app.get("/notes", (req, res) => {
   res.sendFile(path.join(__dirname + "/public/notes.html"));
 });
+
+
+
+//  #####  Routes for API ctions or events  ########
+
+
+// Route get to display all notes in Json
+app.get("/api/notes", (req, res) => {
+    res.json(dbData);
+});
+
+// Route post to save notes
+
+// Route get to display all notes in Json
+app.post("/api/notes", (req, res) => {
+  dbData.push(req.body);
+  res.json(dbData);
+});
+
+
+
+
+
+
+
+
 
 
 // port test
