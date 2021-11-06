@@ -25,11 +25,11 @@ https://hrishi-note-taker.herokuapp.com/
 
  Web Application        
 :--------------------------------:|
-![Web Application with new note ]()      
+![Web Application with new note ](https://github.com/HrishikeshKanabar/Express-Note-Taker/blob/main/public/assets/images/save.JPG)      
 
 Web Application  With Saved Events    
 :--------------------------------:|
-![iWeb Application  with added notes]()  
+![iWeb Application  with added notes](https://github.com/HrishikeshKanabar/Express-Note-Taker/blob/main/public/assets/images/Landing.JPG)  
 
 
 ## Acceptance Criteria achieved
