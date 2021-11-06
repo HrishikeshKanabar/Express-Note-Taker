@@ -70,11 +70,11 @@ Bonus: +10 Points
 
 Step-1 git clone https://github.com/HrishikeshKanabar/Express-Note-Taker.git
 
-Step-2 open folder in VS Code
+Step-2 open folder in VS Code.
 
-Step-3 Open terminal and type "npm start" to start sever
+Step-3 Open terminal and type "npm start" to start server.
 
-Step-4 got to local http://localhost:3001/
+Step-4 got to local http://localhost:3001/ .
 
-Step-5 Repeat the steps as mentioned in how to use application
+Step-5 Repeat the steps as mentioned in how to use application section.
 
